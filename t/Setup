@@ -1,0 +1,7 @@
+export FAKE_BINDIR=$TMPDIR
+rundir=${TESTDIR%/*/*}/${TESTDIR##*/}
+case $rundir in
+*-log) rundir=${rundir%-log}/log ;;
+*) ;;
+esac
+export PATH=$FAKE_BINDIR:$rundir:$PATH
