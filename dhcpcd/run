@@ -1,3 +1,5 @@
-#!/bin/sh
-[ -r conf ] && . ./conf
-exec dhcpcd -B ${OPTS:=-M} 1>&2
+#!/bin/execlineb -PW
+envfile -I ./conf
+importas -sD -M OPTS OPTS
+fdmove -c 1 2
+exec dhcpcd -B $OPTS

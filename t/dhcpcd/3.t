@@ -9,4 +9,5 @@
   $ chmod -r conf
 
   $ run
-  dhcpcd -B -M
+  envfile: fatal: unable to open ./conf: Permission denied
+  [111]
