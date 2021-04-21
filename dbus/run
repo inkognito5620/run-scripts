@@ -1,4 +1,3 @@
-#!/bin/bash
-enable -n [
-[ ! -d /run/dbus ] && install -m755 -g 22 -o 22 -d /run/dbus
+#!/bin/sh
+install -m755 -g 22 -o 22 -d /run/dbus
 exec dbus-daemon --system --nofork --nopidfile
