@@ -1,4 +1,4 @@
-#!/bin/sh
-mkdir -p /run/uuidd
-chown _uuidd:_uuidd /run/uuidd
+#!/bin/execlineb -PW
+foreground { mkdir -p /run/uuidd }
+foreground { chown _uuidd:_uuidd /run/uuidd }
 exec chpst -u _uuidd:_uuidd uuidd -F -P
