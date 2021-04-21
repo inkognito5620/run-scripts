@@ -1,5 +1,5 @@
-default code path, no ./conf
-============================
+no ./conf
+=========
 
   $ . $TESTDIR/../Setup
 

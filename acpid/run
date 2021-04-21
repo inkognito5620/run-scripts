@@ -1,3 +1,4 @@
-#!/bin/sh
-[ -r conf ] && . ./conf
-exec acpid -f ${OPTS:=-l}
+#!/bin/execlineb -PW
+envfile -I ./conf
+importas -sD -l OPTS OPTS
+exec acpid -f $OPTS

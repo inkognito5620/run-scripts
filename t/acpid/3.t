@@ -9,4 +9,5 @@
   $ chmod -r conf
 
   $ run
-  acpid -f -l
+  envfile: fatal: unable to open ./conf: Permission denied
+  [111]
