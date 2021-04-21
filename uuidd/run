@@ -1,5 +1,4 @@
-#!/bin/bash
-enable -n [
-[ ! -d /run/uuidd ] && mkdir -p /run/uuidd
+#!/bin/sh
+mkdir -p /run/uuidd
 chown _uuidd:_uuidd /run/uuidd
 exec chpst -u _uuidd:_uuidd uuidd -F -P

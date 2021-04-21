@@ -10,7 +10,6 @@ preexisting /run/uuidd
   $ fake -cv uuidd
 
   $ run
-  [ ! -d /run/uuidd ]
   mkdir -p /run/uuidd
   chown _uuidd:_uuidd /run/uuidd
   chpst -u _uuidd:_uuidd uuidd -F -P
