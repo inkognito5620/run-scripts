@@ -3,7 +3,14 @@ no ./conf
 
   $ . $TESTDIR/../Setup
 
-  $ fake -cv cd
+  $ fake -bc cd <<\EOF
+  > #!/bin/sh
+  > export PATH=$FAKE_BINDIR:$PATH
+  > echo cd "$1"
+  > shift
+  > exec "$@"
+  > EOF
+
   $ fake -cv exec
 
   $ run
