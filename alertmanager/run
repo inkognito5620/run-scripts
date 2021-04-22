@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+enable -n cd
 
 # Add $ARGS for more arguments
 [ -f ./conf ] && . ./conf

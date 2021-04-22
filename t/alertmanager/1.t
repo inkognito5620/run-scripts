@@ -7,5 +7,5 @@ no ./conf
   $ fake -cv chpst
 
   $ run
-  */run: 11: cd: can't cd to /var/lib/alertmanager (glob)
+  cd /var/lib/alertmanager
   chpst -u _alertmanager alertmanager --config.file=/etc/alertmanager.yml
