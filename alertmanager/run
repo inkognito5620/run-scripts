@@ -1,6 +1,7 @@
 #!/bin/bash
 
 enable -n cd
+enable -n exec
 
 # Add $ARGS for more arguments
 [ -f ./conf ] && . ./conf
