@@ -9,6 +9,7 @@
   $ chmod -r conf
 
   $ run > out
+  envfile: fatal: unable to open ./conf: Permission denied
+  [111]
 
   $ cat out
-  exec dcrond -f
