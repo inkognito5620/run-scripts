@@ -1,4 +1,3 @@
-#!/bin/bash
-enable -n exec
+#!/bin/execlineb -PW
 
 exec haproxy -f /etc/haproxy/haproxy.cfg
