@@ -1,4 +1,5 @@
-#!/bin/bash
-enable -n exec
-[ -r conf ] && . ./conf
-exec cronie-crond -n $OPTS 2>&1
+#!/bin/execlineb -PW
+envfile -I ./conf
+importas -s OPTS OPTS
+fdmove -c 2 1
+exec cronie-crond -n $OPTS
