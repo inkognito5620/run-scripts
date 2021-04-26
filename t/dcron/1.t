@@ -3,9 +3,9 @@ no ./conf
 
   $ . $TESTDIR/../Setup
 
-  $ fake -cv dcrond
+  $ fake -cv exec
 
   $ run > out
 
   $ cat out
-  dcrond -f
+  exec dcrond -f

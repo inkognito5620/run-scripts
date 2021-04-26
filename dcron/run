@@ -1,3 +1,4 @@
-#!/bin/sh
+#!/bin/bash
+enable -n exec
 [ -r conf ] && . ./conf
 exec dcrond -f $OPTS 2>&1

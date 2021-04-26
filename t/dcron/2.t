@@ -3,11 +3,11 @@ with stuff in ./conf
 
   $ . $TESTDIR/../Setup
 
-  $ fake -cv dcrond
+  $ fake -cv exec
 
   $ echo OPTS=-fubar > conf
 
   $ run > out
 
   $ cat out
-  dcrond -f -fubar
+  exec dcrond -f -fubar

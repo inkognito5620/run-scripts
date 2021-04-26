@@ -3,7 +3,7 @@
 
   $ . $TESTDIR/../Setup
 
-  $ fake -cv dcrond
+  $ fake -cv exec
 
   $ echo OPTS=-fubar > conf
   $ chmod -r conf
@@ -11,4 +11,4 @@
   $ run > out
 
   $ cat out
-  dcrond -f
+  exec dcrond -f

@@ -3,11 +3,11 @@ empty ./conf (no $OPTS)
 
   $ . $TESTDIR/../Setup
 
-  $ fake -cv dcrond
+  $ fake -cv exec
 
   $ touch conf
 
   $ run > out
 
   $ cat out
-  dcrond -f
+  exec dcrond -f
