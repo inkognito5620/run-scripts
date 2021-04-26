@@ -1,9 +1,6 @@
-default path, no ./conf
-=======================
-
   $ . $TESTDIR/../Setup
 
-  $ fake -cv lvmetad
+  $ fake -cv exec
 
   $ run
-  lvmetad -f
+  exec lvmetad -f
