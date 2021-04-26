@@ -1,9 +1,6 @@
-default path, no ./conf
-=======================
-
   $ . $TESTDIR/../Setup
 
-  $ fake -cv dmeventd
+  $ fake -cv exec
 
   $ run
-  dmeventd -f
+  exec dmeventd -f
