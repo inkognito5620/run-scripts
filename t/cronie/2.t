@@ -3,11 +3,11 @@ with stuff in ./conf
 
   $ . $TESTDIR/../Setup
 
-  $ fake -cv cronie-crond
+  $ fake -cv exec
 
   $ echo OPTS=-fubar > conf
 
   $ run > out
 
   $ cat out
-  cronie-crond -n -fubar
+  exec cronie-crond -n -fubar

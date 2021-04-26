@@ -1,3 +1,4 @@
-#!/bin/sh
+#!/bin/bash
+enable -n exec
 [ -r conf ] && . ./conf
 exec cronie-crond -n $OPTS 2>&1

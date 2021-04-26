@@ -3,9 +3,9 @@ no ./conf
 
   $ . $TESTDIR/../Setup
 
-  $ fake -cv cronie-crond
+  $ fake -cv exec
 
   $ run > out
 
   $ cat out
-  cronie-crond -n
+  exec cronie-crond -n

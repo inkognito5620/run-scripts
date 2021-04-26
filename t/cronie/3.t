@@ -3,7 +3,7 @@
 
   $ . $TESTDIR/../Setup
 
-  $ fake -cv cronie-crond
+  $ fake -cv exec
 
   $ echo OPTS=-fubar > conf
   $ chmod -r conf
@@ -11,4 +11,4 @@
   $ run > out
 
   $ cat out
-  cronie-crond -n
+  exec cronie-crond -n
