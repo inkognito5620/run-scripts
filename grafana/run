@@ -1,5 +1,4 @@
-#!/bin/bash
+#!/bin/execlineb -PW
 
-enable -n exec
-
-exec chpst -u _grafana:_grafana grafana-server -homepath /usr/share/grafana/ -config /etc/grafana/grafana.ini 2>&1
+fdmove -c 2 1
+exec chpst -u _grafana:_grafana grafana-server -homepath /usr/share/grafana/ -config /etc/grafana/grafana.ini
