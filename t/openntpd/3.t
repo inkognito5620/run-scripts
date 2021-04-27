@@ -3,7 +3,7 @@
 
   $ . $TESTDIR/../Setup
 
-  $ fake -cv openntpd 
+  $ fake -cv exec
 
   $ echo OPTS=-fubar > conf
   $ chmod -r conf
@@ -11,4 +11,4 @@
   $ run > out
 
   $ cat out
-  openntpd -d -s
+  exec openntpd -d -s

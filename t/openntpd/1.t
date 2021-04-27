@@ -3,9 +3,9 @@ no ./conf
 
   $ . $TESTDIR/../Setup
 
-  $ fake -cv openntpd
+  $ fake -cv exec
 
   $ run > out
 
   $ cat out
-  openntpd -d -s
+  exec openntpd -d -s

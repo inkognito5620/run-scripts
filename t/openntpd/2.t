@@ -3,11 +3,11 @@ with stuff in ./conf
 
   $ . $TESTDIR/../Setup
 
-  $ fake -cv openntpd
+  $ fake -cv exec
 
   $ echo OPTS=-fubar > conf
 
   $ run > out
 
   $ cat out
-  openntpd -d -fubar
+  exec openntpd -d -fubar
