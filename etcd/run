@@ -1,9 +1,7 @@
-#!/bin/bash
+#!/bin/execlineb -PW
 
-enable -n exec
+export ETCD_DATA_DIR /var/lib/etcd
+export ETCD_NAME etcd
 
-export ETCD_DATA_DIR=/var/lib/etcd
-export ETCD_NAME=etcd
-
-[ -r conf ] && . ./conf
+envfile -I ./conf
 exec chpst -u etcd:etcd etcd
