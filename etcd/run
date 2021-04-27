@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+enable -n exec
 
 export ETCD_DATA_DIR=/var/lib/etcd
 export ETCD_NAME=etcd
