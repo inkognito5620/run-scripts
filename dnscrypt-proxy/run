@@ -1,2 +1,2 @@
-#!/bin/bash
+#!/bin/execlineb -PW
 exec dnscrypt-proxy -config /etc/dnscrypt-proxy.toml
