@@ -1,6 +1,6 @@
-  $ . $TESTDIR/../Setup
+$ . $TESTDIR/../Setup
 
-  $ fake -cv exec
+$ fake -cv dnscrypt-proxy
 
-  $ run
-  exec dnscrypt-proxy -config /etc/dnscrypt-proxy.toml
+$ run
+dnscrypt-proxy -config /etc/dnscrypt-proxy.toml
