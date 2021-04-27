@@ -1,4 +1,5 @@
-#!/bin/bash
-enable -n exec
-[ -r conf ] && . ./conf
-exec openntpd -d ${OPTS:=-s} 2>&1
+#!/bin/execlineb -PW
+envfile -I ./conf
+importas -sD -s OPTS OPTS
+fdmove -c 2 1
+exec openntpd -d $OPTS
