@@ -3,7 +3,7 @@ no ./conf
 
   $ . $TESTDIR/../Setup
 
-  $ fake -cv chpst
+  $ fake -cv exec
   $ fake -cv laptop_mode
 
   $ run
