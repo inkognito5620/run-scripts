@@ -4,10 +4,10 @@ no ./conf
   $ . $TESTDIR/../Setup
 
   $ fake -cv modprobe
-  $ fake -cv espeakup -d
+  $ fake -cv exec
 
   $ run > out
 
   $ cat out
   modprobe speakup_soft start=1
-  espeakup -d
+  exec espeakup -d

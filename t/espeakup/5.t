@@ -4,7 +4,7 @@ modprobe failure
   $ . $TESTDIR/../Setup
 
   $ fake -cvx 1 modprobe
-  $ fake -cv espeakup -d
+  $ fake -cv exec
 
   $ touch conf
 

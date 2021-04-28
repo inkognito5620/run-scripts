@@ -4,7 +4,7 @@ with stuff in ./conf
   $ . $TESTDIR/../Setup
 
   $ fake -cv modprobe
-  $ fake -cv espeakup -d
+  $ fake -cv exec
 
   $ echo OPTS=-fubar > conf
 
@@ -12,4 +12,4 @@ with stuff in ./conf
 
   $ cat out
   modprobe speakup_soft start=1
-  espeakup -d -fubar
+  exec espeakup -d -fubar
