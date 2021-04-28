@@ -10,7 +10,7 @@
   $ chmod -r conf
 
   $ run > out
+  [111]
 
   $ cat out
-  modprobe speakup_soft start=1
-  exec espeakup -d
+  envfile: fatal: unable to open ./conf: Permission denied

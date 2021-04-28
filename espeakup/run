@@ -1,6 +1,6 @@
-#!/bin/bash
-exec 2>&1
-enable -n exec
-[ -r conf ] && . ./conf
-modprobe speakup_soft start=1 || exit 1
-exec espeakup -d ${OPTS}
+#!/bin/execlineb -PW
+fdmove -c 2 1
+envfile -I ./conf
+if { modprobe speakup_soft start=1 }
+  importas -s OPTS OPTS
+  exec espeakup -d ${OPTS}
