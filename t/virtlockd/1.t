@@ -3,7 +3,7 @@ no ./conf
 
   $ . $TESTDIR/../Setup
 
-  $ fake -cv virtlockd
+  $ fake -cv exec
 
   $ run
-  virtlockd
+  exec virtlockd
