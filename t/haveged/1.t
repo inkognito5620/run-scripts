@@ -3,6 +3,6 @@ no ./conf
 
   $ . $TESTDIR/../Setup
 
-  $ fake -cv haveged -w
+  $ fake -cv exec
 
   $ run
