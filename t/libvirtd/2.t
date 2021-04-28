@@ -3,8 +3,7 @@ with stuff in ./conf
 
   $ . $TESTDIR/../Setup
 
-  $ fake -cv sv
-  $ fake -cv libvirtd
+  $ fake -cv exec
 
   $ echo OPTS=-fubar > conf
 

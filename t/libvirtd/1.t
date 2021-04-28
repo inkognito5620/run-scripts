@@ -3,8 +3,7 @@ no ./conf
 
   $ . $TESTDIR/../Setup
 
-  $ fake -cv sv
-  $ fake -cv libvirtd
+  $ fake -cv exec
 
   $ run > out
 

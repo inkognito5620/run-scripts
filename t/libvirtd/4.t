@@ -3,8 +3,7 @@ empty ./conf (no $OPTS)
 
   $ . $TESTDIR/../Setup
 
-  $ fake -cv sv
-  $ fake -cv libvirtd
+  $ fake -cv exec
 
   $ touch conf
 
