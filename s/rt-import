@@ -1,0 +1,25 @@
+#!/bin/sh
+n=${1##*/}
+td=$n
+sd=$n
+if [ "$n" = log ]; then
+  r=${1%/log}
+  r=${r##*/}
+  td=$r-log
+  sd=$r/log
+fi
+cp -r "$1" .
+chmod +x "$sd/run"
+mkdir -p "t/$td"
+argv=$(sed -n '$s/^exec //p' $sd/run)
+cmd=${argv%% *}
+
+cat > "t/$td/1.t" <<EOF
+  \$ fake -cv $cmd" 
+  \$ run"           
+  $argv"            
+EOF
+#echo >"t/$td/1.t" "  \$ fake -cv $cmd"
+#echo >"t/$td/1.t" "  \$ run"
+#echo >"t/$td/1.t" "  $argv"
+

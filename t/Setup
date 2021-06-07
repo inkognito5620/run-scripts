@@ -1,0 +1,2 @@
+export FAKE_BINDIR=$(mktemp -d)
+export PATH="$FAKE_BINDIR:$BINDIR:$PATH"
